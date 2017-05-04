@@ -29,6 +29,9 @@ app.get('/content-align', function(req, res){
 app.get('/list', function(req, res){
     res.render('list');
 });
+app.get('/grid', function(req, res){
+    res.render('grid');
+});
 
 
 var server = app.listen(3000, function(){
