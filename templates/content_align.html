@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="ui container">
+    <p>
+        内容对齐的方式有浮动、top、middle、bottom等，是通过类的组合实现：clearing, left floated, right floated, bottom aligned, middle aligned。
+    </p>
+    <div class="ui header">
+        items
+    </div>
+    <div class="ui items">
+        <div class="item">
+            <div class="image">
+                <img src="https://avatars2.githubusercontent.com/u/1224344?v=3&s=400" alt="">
+            </div>
+            <div class="middle aligned content">
+                <div class="meta">
+                    <span>2017-10-1</span>
+                </div>
+                <div class="description">
+                    description
+                </div>
+                <div class="extra">
+                    <button class="ui right floated button">right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui header">
+        segment float and text aligne
+    </div>
+    <div class="ui clearing segment">
+        <div class="ui right floated segment">
+            right
+        </div>
+        <div class="ui left floated segment">
+            left
+        </div>
+    </div>
+    <div class="ui clearing segment">
+        clearing float
+        <button class="ui right floated button">right</button>
+    </div>
+    <div class="ui right aligned segment">
+      Right
+    </div>
+    <div class="ui left aligned segment">
+      Left
+    </div>
+    <div class="ui center aligned segment">
+      Center
+    </div>
+</div>
+{% endblock %}

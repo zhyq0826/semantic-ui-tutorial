@@ -1,11 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/css/semantic.min.css">
-</head>
-<body>
-    <h1>hello nodejs</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block main %}
+<div class="ui container">
+    <div class="ui cards">
+        <div class="card">
+            <div class="content">
+                <a href="/container" class="header">
+                    container
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <a href="/content-align" class="header">
+                    content align
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <a href="/list" class="header">
+                    列表
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

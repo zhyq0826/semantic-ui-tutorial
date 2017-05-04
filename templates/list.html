@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="ui container">
+    <p>
+        semantic ui 提供了两种非常常用的列表 items 和 list。他们的区别在于 items 元素新更丰富，共同点在于都有 content 包裹的
+        主要信息区域，而且 item 能实现对 内容的对齐方式的更改 
+        middle aligned, bottom aligned
+    </p>
+    <div class="ui header">items</div>
+    <div class="ui items">
+        <div class="item">
+            <div class="image">
+                <img src="https://avatars2.githubusercontent.com/u/1224344?v=3&s=400" alt="">
+            </div>
+            <div class="content">
+                <div class="header">
+                    header
+                </div>
+                <div class="meta">
+                    <span>2017-10-1</span>
+                </div>
+                <div class="description">
+                    description
+                </div>
+                <div class="extra">
+                    <p>
+                        Addtional details
+                    </p>
+                    <button class="ui button">left</button>
+                    <button class="ui right floated button">right</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui header">list</div>
+    <div class="ui list">
+        <div class="item">
+            <i class="folder icon" ></i>
+            <div class="content">
+                <div class="header">header</div>
+                <div class="description">
+                    description
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

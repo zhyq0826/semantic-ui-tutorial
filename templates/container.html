@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main %}
+<style>
+    .c {
+        border: 1px solid red;
+        padding: 10px;
+    }
+</style>
+<div class="ui container">
+    <p>
+        container 实现了最简单的居中布局，除了居中元素，还可以居中文本内容
+    </p>
+    <div class="c">
+        content
+    </div>
+</div>
+<div class="ui text container">
+    Sometimes you just need to put a single column of centered text on a page. A text container is a special type of container optimized for a single flowing column of text, like this instructions on this page.
+</div>
+{% endblock %}

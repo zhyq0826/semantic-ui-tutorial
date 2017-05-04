@@ -7,7 +7,8 @@ var app = express();
 app.use('/static', express.static('static'));
 nunjucks.configure('templates', {
     autoescape: true,
-    express: app
+    express: app,
+    watch: true
 });
 
 app.set('view engine', 'html');
@@ -15,6 +16,18 @@ app.set('view engine', 'html');
 
 app.get('/', function(req, res){
     res.render('index');
+});
+
+app.get('/container', function(req, res){
+    res.render('container');
+});
+
+app.get('/content-align', function(req, res){
+    res.render('content_align');
+});
+
+app.get('/list', function(req, res){
+    res.render('list');
 });
 
 
