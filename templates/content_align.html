@@ -3,7 +3,8 @@
 {% block main %}
 <div class="ui container">
     <p>
-        内容对齐的方式有浮动、top、middle、bottom等，是通过类的组合实现：clearing, left floated, right floated, bottom aligned, middle aligned。
+        内容对齐的方式有浮动、top、middle、bottom等，是通过类的组合实现：clearing, left floated, right floated, bottom aligned, middle aligned, centered。
+        可以进行内容对其的元素或者视图包括 items 等
     </p>
     <div class="ui header">
         items
@@ -49,6 +50,34 @@
     </div>
     <div class="ui center aligned segment">
       Center
+    </div>
+    <div class="ui header">
+        cards
+    </div>
+    <div class="ui centered card">
+      <div class="image">
+            <img src="https://avatars2.githubusercontent.com/u/1224344?v=3&s=400" alt="">
+      </div>
+      <div class="content">
+            <a class="header">Elyse</a>
+      </div>
+    </div>
+    <div class="ui card">
+      <div class="content">
+        <div class="header">Cute Dog</div>
+        <div class="meta">
+          <span class="right floated time">2 days ago</span>
+          <span class="category">Animals</span>
+        </div>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+      <div class="extra content">
+        <div class="right floated author">
+            <img class="ui avatar image" src="https://avatars2.githubusercontent.com/u/1224344?v=3&s=400" alt="">Mate
+        </div>
+      </div>
     </div>
 </div>
 {% endblock %}
