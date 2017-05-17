@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="ui container">
+        <p>卡片是组织内容的一种很好的方式，利用卡片可以把带图片的内容很好的呈现</p>
+        <p>卡片一般分为 image 和 content 两个区块，额外可以包含 extra content</p>
+        <div class="ui card">
+          <div class="image">
+            <img src="/static/img/1224344.jpeg">
+          </div>
+          <div class="content">
+            <a class="header">Kristy</a>
+            <div class="meta">
+              <span class="date">Joined in 2013</span>
+            </div>
+            <div class="description">
+              Kristy is an art director living in New York.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="user icon"></i>
+              22 Friends
+            </a>
+          </div>
+        </div>
+    </div>
+{% endblock %}

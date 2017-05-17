@@ -33,6 +33,13 @@ app.get('/grid', function(req, res){
     res.render('grid');
 });
 
+app.get('/layout-github', function(req, res){
+    res.render('layout-github');
+});
+
+app.get('*', function(req, res){
+    res.render(req.path.replace('\/',''));
+});
 
 var server = app.listen(3000, function(){
     var host = server.address().address;

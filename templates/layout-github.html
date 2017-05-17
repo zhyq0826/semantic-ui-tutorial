@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="ui container">
+        <h3>说说布局--- <a href="https://github.com/">github</a></h3>    
+        <p>
+            github 是面向开发者的网站，功能比较复杂。github 采用导航+主题内容的布局，也可以说是三栏式的。
+            头部主导航左边是带有全局和通知性质的功能：全站 search、pull request、issues、gist，主导航右边
+            是个人账户信息：profile、stars、explorer、integration、setting、logout 以及 github赖以组织内容的基础：repository、organization、gist 创建。<br>
+        </p>
+        <p>
+            主导航承担了信息实体的创建：账户、组织、仓库、gist。<br>
+            主导航也提供了用户互动相关内容：search、pull request、issues
+        </p>
+
+        <h3>组织实体的--菜单</h3>
+        <p>
+            无论是进入个人页 <a href="https://github.com/zhyq0826">zhyq0826</a>，组织页 <a href="https://github.com/wecatch">wecatch</a>，项目页 <a href="https://github.com/zhyq0826/semantic-ui-tutorial">semantic-ui-tutorial</a> 都会很明显看到每个用来组织内容的实体(个人、组织、项目)都有子菜单，github 子菜单全都是采用 tab menu 的形式，这样每个实体页首先是信息的基本说明，其次就是子菜单，组织非常清晰，而且复用性强。
+        </p>
+        <p>
+            菜单承担了实体的功能性属性
+        </p>
+        <div>
+            <img class="ui big image" src="/static/img/github-personal.jpeg">
+            <img class="ui big image" src="/static/img/github-org.jpeg">
+            <img class="ui big image" src="/static/img/github-repo.jpeg">
+        </div>
+        <h3>二级菜单</h3>
+        <p>
+            github 有大量的二级菜单，这些二级菜单都是进入页面进行细节性配置时才会出现，这也就体现了二级菜单的作用：
+            深层次配置。<br>
+            github 的二级菜单是通过左边栏的形势展示
+        </p>
+        <p>
+            二级菜单是菜单功能性属性的延伸和拓展
+        </p>
+        <div>
+            <img src="/static/img/github-sec.jpeg" alt="" class="ui big image">
+        </div>
+        <h3>承载内容的块</h3>
+        <p>
+            内容的承载往往都具有非常显著的特点，内容头部说明内容对象主体，有型块或无形块包裹内容细节。
+        </p>
+        <div>
+            <img src="/static/img/github-seg1.jpeg" alt="" class="ui big image">
+            <img src="/static/img/github-seg2.jpeg" alt="" class="ui big image">
+            <img src="/static/img/github-seg3.jpeg" alt="" class="ui big image">
+        </div>
+    </div>
+{% endblock %}
